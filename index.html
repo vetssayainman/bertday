@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+  
+<head>
+  <title>Birthday Yuri</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Yuyu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+</head>
+
+<body>
+  
+  <div class="bax">
+    <button onclick="pindot(this)">click click click!!</button>
+  </div>
+  
+  <img id="bang2" src="element/bangs.jpeg" >
+  
+  <div class="box" >
+    <div class="card" id="card">
+      <h1 id="type">HAPPY BIRTHDAY!!</h1>
+      <p id="box2">Happy birthday yuriiiii🎂🥳<br></p></p>
+      <img id="candle"src="element/kadila.gif">
+      <img id="kandle"src="element/kadila.gif">
+      <img class="pic" src="element/kake.jpg">
+      <img id="dancer" src="element/cat.gif">
+      <img id="wacky" src="element/wacky.jpg">
+      <img id="bang" src="element/bangs.jpeg" >
+      
+
+    </div>
+  </div>
+  
+  
+
+  
+  
+  
+  <audio id="birth" loop src="element/happy.mp4"></audio>
+  
+  <script>
+    function pindot(btn){
+      document.getElementById("card").style.display="block";
+      btn.style.display="none"
+      const musik = document.getElementById("birth");
+      musik.play();
+      const imahe =document.getElementById('bang2').style.display="block";
+    }
+  </script>
+  
+  
+  
+</body>
+
+</html> 

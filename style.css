@@ -1,0 +1,140 @@
+body {
+  margin: 20px;
+  animation: bodies 5s infinite linear;
+}
+
+@keyframes bodies {
+  0%   { background-color: red; }
+  10%  { background-color: orange; }
+  20%  { background-color: yellow; }
+  30%  { background-color: green; }
+  40%  { background-color: cyan; }
+  50%  { background-color: blue; }
+  60%  { background-color: indigo; }
+  70%  { background-color: violet; }
+  80%  { background-color: pink; }
+  90%  { background-color: gold; }
+  100% { background-color: red; }
+}
+
+.box@{
+  background-color: gold;
+  padding: 50px ;
+  border-radius: 15px;
+}
+
+.card{
+  display: none;
+  background: blue;
+  border: 3px dotted gold;
+  border-radius: 15px;
+  height: 300px;
+}
+
+#type {
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid black;
+  width: 0;
+  animation: typing 4s steps(20) infinite, blink 0.7s;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+button{
+  background-color: #efeab5;
+  border: 3px inset gold;
+  border-radius:50px;
+  height: 100px;
+  width: 300px;
+  font-size: 20px;
+  font-family: "Press Start 2P", system-ui;
+  padding: 20px;
+  box-shadow: 20px 20px 100px cyan;
+  
+  
+}
+
+.bax{
+  width: 90%;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+#bang{
+  height: 100px;
+  border-radius: 100px;
+  margin-top: 30px;
+  animation: 3s infinite myscale;
+}
+
+#bang2{
+  height: 50px;
+  border-radius: 100px;
+  animation: 3s infinite myrotate;
+  display: none;
+}
+
+@keyframes myscale{
+  50%{transform : scale(0.5,0.5)}
+}
+
+@keyframes myrotate{
+  50%{ transform : rotatez(360deg)}
+}
+
+#wacky{
+  height: 200px;
+  border-radius: 100px;
+  margin-top: 60px;
+  animation: 1s infinite fadeIn;
+}
+
+
+@keyframes fadeIn {
+  5%{transform: rotatex(360deg);}
+}
+
+#candle{
+  position: relative;
+  left: 70%;
+}
+
+#kandle{
+  position: relative;
+  left: -100px;
+}
+
+#box2{
+  text-align: center;
+  color: gold;
+}
+
+.pic{
+  position: relative;
+  top: -120px;
+  right: -130px ;
+  width: 100px;
+  height: 100p;
+  background: transparent;
+  mix-blend-mode: multiply;
+}
+
+#dancer{
+  position: relative;
+  top: 60px;
+  right: -50px ;
+  width: 100px;
+  height: 100p;
+  background: transparent;
+  mix-blend-mode: multiply;
+}
+
